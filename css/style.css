@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+:root{
+    --primary: #fefefe ;
+    --secondary: #eeeeee;
+    --tertiary: #e08f2c;
+}
+
 html {
-    /* Adiciona rolagem suave ao clicar em links de âncora */
+    
     scroll-behavior: smooth;
 }
 
@@ -15,12 +21,16 @@ html {
     color: black;
 }
 
+::selection {
+    background-color: var(--tertiary); 
+    color: white;                     
+}
+
 body{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 50px;
     background-color: var(--primary);
 }
 
@@ -29,15 +39,9 @@ body{
     height: 100vh;
 }
 
-:root{
-    --primary: #fefefe ;
-    --secondary: #eeeeee;
-    --tertiary: #e08f2c;
-}
-
 .logo{
-    width: 30px;
-    height: 30px;
+    width: 100px;
+    height: 40px;
 }
 
 ul{
@@ -55,10 +59,11 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between; 
+    z-index: 1000;
     padding: 1rem 3rem;
 }
 
-.content{
+main.content{
     height: 100%; 
     display: flex;
     flex-direction: column;
@@ -85,11 +90,11 @@ h2{
     transition: background-color 0.3s ease;
 }
 a{
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
 }
 
 a:hover{
-    color: var(--secondary);
+    color: var(--tertiary);
 }
 
 .btn:hover{
@@ -108,7 +113,6 @@ a:hover{
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    padding: 3rem 1rem; 
 }
 
 .about-me {
@@ -125,6 +129,7 @@ a:hover{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap; 
+    gap: 2rem;
 }
 
 .about-me-img{
@@ -137,25 +142,21 @@ a:hover{
 
 .about-me-content p {
     max-width: 600px;
-    font-size: 1.5pc;
+    font-size: 1.25rem;
     
 }
 
-.about-me-content{
-    gap: 2rem;
-}
-
-.portfolio-img{
-    width: 400px;
-    height: 250px;
+.portfolio-item{
+    width: 15rem;
+    height: 25rem;
     object-fit: cover; 
     border-radius: 8px;
-    transition: transform 0.3s ease; /* Adiciona uma transição suave para a transformação */
+    transition: transform 0.3s ease;
 }
 
-.portfolio-img:hover{
+.portfolio-item:hover{
     cursor: pointer;
-    transform: scale(1.05); /* Amplia a imagem em 5% */
+    transform: scale(1.05); 
 }
 
 .portfolio-content {
@@ -177,7 +178,7 @@ a:hover{
     text-align: center;
 }
 
-.section-container h1 {
+.section-container h2 {
     text-align: center;
     margin-bottom: 30px;
 }
