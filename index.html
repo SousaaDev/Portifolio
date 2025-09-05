@@ -7,60 +7,59 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo"></a>
-        <ul class="nav-links">
-            <li><a href="#about-me">About me</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <header class="container">
-        <main class="content">
+    <header>
+        <nav>
+            <a href="index.html"><img class="logo" src="img/logo.png" alt="Felipe de Sousa Logo"></a>
+            <ul class="nav-links">
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container hero">
             <h1>Hi, I'm Felipe de Sousa</h1>
             <h2>I'm a Web Developer</h2>
             <a href="#portfolio" class="btn">VIEW WORK</a>
-        </main>
-    </header>
+        </section>
 
-    <section id="about-me" class="about-me">
-        <div class="section-container">
+        <section id="about-me" class="about-me">
             <h2>About Me</h2>
             <div class="about-me-content">
-                <img class="about-me-img" src="img/eu.png" alt="Uma imagem representando o desenvolvedor ou seu trabalho.">
+                <img class="about-me-img" src="img/eu.png" alt="A photo of Felipe de Sousa.">
                 <p>I'm a programmer with a genuine passion for solving complex problems and building things for the web. I enjoy taking on new challenges that push my skills and allow me to create efficient and impactful digital experiences.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="portfolio" class="portfolio">
-        <div class="section-container">
+        <section id="portfolio" class="portfolio">
             <h2>Portfolio</h2>
             <div class="portfolio-content">
-                <video class="portfolio-item" autoplay loop muted playsinline>
+                <video class="portfolio-item" autoplay loop muted playsinline aria-label="Project 1 preview">
                     <source src="videos/projeto1-preview.mp4" type="video/mp4">
                     Seu navegador não suporta a tag de vídeo. Preview do Projeto 1.
                 </video>
-                <video class="portfolio-item" autoplay loop muted playsinline>
+                <video class="portfolio-item" autoplay loop muted playsinline aria-label="Project 2 preview">
                     <source src="videos/projeto2-preview.mp4" type="video/mp4">
                     Seu navegador não suporta a tag de vídeo. Preview do Projeto 2.
                 </video>
-                <video class="portfolio-item" autoplay loop muted playsinline>
+                <video class="portfolio-item" autoplay loop muted playsinline aria-label="Project 3 preview">
                     <source src="videos/projeto3-preview.mp4" type="video/mp4">
                     Seu navegador não suporta a tag de vídeo. Preview do Projeto 3.
                 </video>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="contact">
-        <div class="section-container">
+        <section id="contact" class="contact">
             <h2>Contact</h2>
             <div class="contact-content">
                 <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. If you have a question or just want to say hi, don't hesitate to reach out. Let's build something great together!</p>
-                <a href="sousaalipee@gmail.com.com" class="btn">SEND MESSAGE</a>
+                <a href="mailto:sousaalipee@gmail.com" class="btn">SEND MESSAGE</a>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
+
+<script src="js/config.js"></script>
 </body>
 </html>
